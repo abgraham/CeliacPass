@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEC893981DB0EFC8001D0496 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC893971DB0EFC8001D0496 /* main.m */; };
+		DEC8939B1DB0EFC8001D0496 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC8939A1DB0EFC8001D0496 /* AppDelegate.m */; };
+		DEC8939E1DB0EFC8001D0496 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC8939D1DB0EFC8001D0496 /* ViewController.m */; };
+		DEC893A11DB0EFC8001D0496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC8939F1DB0EFC8001D0496 /* Main.storyboard */; };
+		DEC893A31DB0EFC8001D0496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC893A21DB0EFC8001D0496 /* Assets.xcassets */; };
+		DEC893A61DB0EFC8001D0496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC893A41DB0EFC8001D0496 /* LaunchScreen.storyboard */; };
+		DEC893B11DB0EFC8001D0496 /* CeliacPassUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC893B01DB0EFC8001D0496 /* CeliacPassUITests.m */; };
+		DEC893BC1DB0F2B6001D0496 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC893BB1DB0F2B6001D0496 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEC893AD1DB0EFC8001D0496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC8938B1DB0EFC8001D0496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEC893921DB0EFC8001D0496;
+			remoteInfo = CeliacPass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEC893931DB0EFC8001D0496 /* CeliacPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeliacPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC893971DB0EFC8001D0496 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEC893991DB0EFC8001D0496 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEC8939A1DB0EFC8001D0496 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEC8939C1DB0EFC8001D0496 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DEC8939D1DB0EFC8001D0496 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DEC893A01DB0EFC8001D0496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEC893A21DB0EFC8001D0496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEC893A51DB0EFC8001D0496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEC893A71DB0EFC8001D0496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC893AC1DB0EFC8001D0496 /* CeliacPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeliacPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC893B01DB0EFC8001D0496 /* CeliacPassUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CeliacPassUITests.m; sourceTree = "<group>"; };
+		DEC893B21DB0EFC8001D0496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC893BB1DB0F2B6001D0496 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEC893901DB0EFC8001D0496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC893BC1DB0F2B6001D0496 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC893A91DB0EFC8001D0496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEC8938A1DB0EFC8001D0496 = {
+			isa = PBXGroup;
+			children = (
+				DEC893BB1DB0F2B6001D0496 /* CoreLocation.framework */,
+				DEC893951DB0EFC8001D0496 /* CeliacPass */,
+				DEC893AF1DB0EFC8001D0496 /* CeliacPassUITests */,
+				DEC893941DB0EFC8001D0496 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEC893941DB0EFC8001D0496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEC893931DB0EFC8001D0496 /* CeliacPass.app */,
+				DEC893AC1DB0EFC8001D0496 /* CeliacPassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEC893951DB0EFC8001D0496 /* CeliacPass */ = {
+			isa = PBXGroup;
+			children = (
+				DEC893991DB0EFC8001D0496 /* AppDelegate.h */,
+				DEC8939A1DB0EFC8001D0496 /* AppDelegate.m */,
+				DEC8939C1DB0EFC8001D0496 /* ViewController.h */,
+				DEC8939D1DB0EFC8001D0496 /* ViewController.m */,
+				DEC8939F1DB0EFC8001D0496 /* Main.storyboard */,
+				DEC893A21DB0EFC8001D0496 /* Assets.xcassets */,
+				DEC893A41DB0EFC8001D0496 /* LaunchScreen.storyboard */,
+				DEC893A71DB0EFC8001D0496 /* Info.plist */,
+				DEC893961DB0EFC8001D0496 /* Supporting Files */,
+			);
+			path = CeliacPass;
+			sourceTree = "<group>";
+		};
+		DEC893961DB0EFC8001D0496 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEC893971DB0EFC8001D0496 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEC893AF1DB0EFC8001D0496 /* CeliacPassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEC893B01DB0EFC8001D0496 /* CeliacPassUITests.m */,
+				DEC893B21DB0EFC8001D0496 /* Info.plist */,
+			);
+			path = CeliacPassUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEC893921DB0EFC8001D0496 /* CeliacPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC893B51DB0EFC8001D0496 /* Build configuration list for PBXNativeTarget "CeliacPass" */;
+			buildPhases = (
+				DEC8938F1DB0EFC8001D0496 /* Sources */,
+				DEC893901DB0EFC8001D0496 /* Frameworks */,
+				DEC893911DB0EFC8001D0496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CeliacPass;
+			productName = CeliacPass;
+			productReference = DEC893931DB0EFC8001D0496 /* CeliacPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEC893AB1DB0EFC8001D0496 /* CeliacPassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC893B81DB0EFC8001D0496 /* Build configuration list for PBXNativeTarget "CeliacPassUITests" */;
+			buildPhases = (
+				DEC893A81DB0EFC8001D0496 /* Sources */,
+				DEC893A91DB0EFC8001D0496 /* Frameworks */,
+				DEC893AA1DB0EFC8001D0496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEC893AE1DB0EFC8001D0496 /* PBXTargetDependency */,
+			);
+			name = CeliacPassUITests;
+			productName = CeliacPassUITests;
+			productReference = DEC893AC1DB0EFC8001D0496 /* CeliacPassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEC8938B1DB0EFC8001D0496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Annie Graham";
+				TargetAttributes = {
+					DEC893921DB0EFC8001D0496 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DEC893AB1DB0EFC8001D0496 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DEC893921DB0EFC8001D0496;
+					};
+				};
+			};
+			buildConfigurationList = DEC8938E1DB0EFC8001D0496 /* Build configuration list for PBXProject "CeliacPass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEC8938A1DB0EFC8001D0496;
+			productRefGroup = DEC893941DB0EFC8001D0496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEC893921DB0EFC8001D0496 /* CeliacPass */,
+				DEC893AB1DB0EFC8001D0496 /* CeliacPassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEC893911DB0EFC8001D0496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC893A61DB0EFC8001D0496 /* LaunchScreen.storyboard in Resources */,
+				DEC893A31DB0EFC8001D0496 /* Assets.xcassets in Resources */,
+				DEC893A11DB0EFC8001D0496 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC893AA1DB0EFC8001D0496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEC8938F1DB0EFC8001D0496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC8939E1DB0EFC8001D0496 /* ViewController.m in Sources */,
+				DEC8939B1DB0EFC8001D0496 /* AppDelegate.m in Sources */,
+				DEC893981DB0EFC8001D0496 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC893A81DB0EFC8001D0496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC893B11DB0EFC8001D0496 /* CeliacPassUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEC893AE1DB0EFC8001D0496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEC893921DB0EFC8001D0496 /* CeliacPass */;
+			targetProxy = DEC893AD1DB0EFC8001D0496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEC8939F1DB0EFC8001D0496 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEC893A01DB0EFC8001D0496 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEC893A41DB0EFC8001D0496 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEC893A51DB0EFC8001D0496 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEC893B31DB0EFC8001D0496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DEC893B41DB0EFC8001D0496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEC893B61DB0EFC8001D0496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CeliacPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Annie.CeliacPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEC893B71DB0EFC8001D0496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CeliacPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Annie.CeliacPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEC893B91DB0EFC8001D0496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CeliacPassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Annie.CeliacPassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CeliacPass;
+			};
+			name = Debug;
+		};
+		DEC893BA1DB0EFC8001D0496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CeliacPassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Annie.CeliacPassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CeliacPass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEC8938E1DB0EFC8001D0496 /* Build configuration list for PBXProject "CeliacPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC893B31DB0EFC8001D0496 /* Debug */,
+				DEC893B41DB0EFC8001D0496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC893B51DB0EFC8001D0496 /* Build configuration list for PBXNativeTarget "CeliacPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC893B61DB0EFC8001D0496 /* Debug */,
+				DEC893B71DB0EFC8001D0496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEC893B81DB0EFC8001D0496 /* Build configuration list for PBXNativeTarget "CeliacPassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC893B91DB0EFC8001D0496 /* Debug */,
+				DEC893BA1DB0EFC8001D0496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEC8938B1DB0EFC8001D0496 /* Project object */;
+}
