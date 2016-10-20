@@ -15,13 +15,13 @@
 @property (strong, nonatomic) NSDictionary *codeToTranslation;
 @property (weak, nonatomic) IBOutlet UITextField *writeInCountry;
 @property (weak, nonatomic) IBOutlet UITextView *cardText;
-@property (strong, nonatomic) NSString *country;
-
 
 
 @end
 
 @implementation ViewController
+
+NSString *country;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,8 +56,8 @@
         NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
         if (error == nil && [placemarks count] > 0) {
             CLPlacemark *placemark = [placemarks lastObject];
-            self.country = [NSString stringWithFormat:@"%@", placemark.country];
-            self.cardText.text = [self translation:self.country];
+            country = [NSString stringWithFormat:@"%@", placemark.country];
+            self.cardText.text = [self translation:country];
         } else {
             NSLog(@"%@", error.debugDescription);
         }

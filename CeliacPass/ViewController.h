@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
 
+extern NSString *country;
 
 @end
 
