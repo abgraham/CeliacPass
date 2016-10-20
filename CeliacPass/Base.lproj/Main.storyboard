@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Sv8-5O-Uhy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftl-HO-xme">
-                                <rect key="frame" x="114" y="478" width="266" height="30"/>
+                                <rect key="frame" x="102" y="449" width="266" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -28,7 +28,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbg-FX-nfR">
-                                <rect key="frame" x="421" y="478" width="36" height="30"/>
+                                <rect key="frame" x="381" y="448" width="36" height="30"/>
                                 <state key="normal" title="enter">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.1149012539" green="0.73239203470000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What country are you in?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1L-x7-GzE">
-                                <rect key="frame" x="114" y="449" width="247" height="21"/>
+                                <rect key="frame" x="102" y="420" width="247" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -88,12 +88,76 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Pws-ci-9w4">
+                        <barButtonItem key="rightBarButtonItem" title="see full country list" id="T5y-4f-Q4T">
+                            <connections>
+                                <segue destination="9ue-AL-xsS" kind="push" id="749-HZ-YAP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cardText" destination="RMH-8g-Ond" id="hVz-7k-0E4"/>
                         <outlet property="writeInCountry" destination="ftl-HO-xme" id="wPX-bD-SWv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="204"/>
+        </scene>
+        <!--Country Picker View Controller-->
+        <scene sceneID="jfY-Gv-CrH">
+            <objects>
+                <viewController id="9ue-AL-xsS" customClass="CountryPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Qu-f4-u7v"/>
+                        <viewControllerLayoutGuide type="bottom" id="G1c-mL-Jn1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UnY-LJ-8eo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GlZ-mR-rN4">
+                                <rect key="frame" x="112" y="153" width="392" height="420"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A full list of countries we are able to translate for:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJT-kF-zN3">
+                                <rect key="frame" x="112" y="113" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GlZ-mR-rN4" firstAttribute="centerX" secondItem="UnY-LJ-8eo" secondAttribute="centerX" id="24H-ZG-86F"/>
+                            <constraint firstItem="GlZ-mR-rN4" firstAttribute="centerY" secondItem="UnY-LJ-8eo" secondAttribute="centerY" id="Dsa-Bu-bU0"/>
+                            <constraint firstItem="TJT-kF-zN3" firstAttribute="centerX" secondItem="UnY-LJ-8eo" secondAttribute="centerX" id="dag-ME-f8A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EtF-m4-AIN"/>
+                    <connections>
+                        <outlet property="countryTable" destination="GlZ-mR-rN4" id="zPh-KK-6O1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScS-Td-BfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="204"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qsO-fe-bRL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sv8-5O-Uhy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zUU-lb-QV4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fha-7b-UNO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9v-aC-gPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="204"/>
         </scene>

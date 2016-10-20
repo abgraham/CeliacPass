@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEC4D6F81DB91CD30087DFC6 /* CountryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC4D6F71DB91CD30087DFC6 /* CountryPickerViewController.m */; };
 		DEC893981DB0EFC8001D0496 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC893971DB0EFC8001D0496 /* main.m */; };
 		DEC8939B1DB0EFC8001D0496 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC8939A1DB0EFC8001D0496 /* AppDelegate.m */; };
 		DEC8939E1DB0EFC8001D0496 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC8939D1DB0EFC8001D0496 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEC4D6F61DB91CD30087DFC6 /* CountryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryPickerViewController.h; path = ../CountryPickerViewController.h; sourceTree = "<group>"; };
+		DEC4D6F71DB91CD30087DFC6 /* CountryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryPickerViewController.m; path = ../CountryPickerViewController.m; sourceTree = "<group>"; };
 		DEC893931DB0EFC8001D0496 /* CeliacPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeliacPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC893971DB0EFC8001D0496 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEC893991DB0EFC8001D0496 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 		DEC893951DB0EFC8001D0496 /* CeliacPass */ = {
 			isa = PBXGroup;
 			children = (
+				DEC4D6F61DB91CD30087DFC6 /* CountryPickerViewController.h */,
+				DEC4D6F71DB91CD30087DFC6 /* CountryPickerViewController.m */,
 				DEC893991DB0EFC8001D0496 /* AppDelegate.h */,
 				DEC8939A1DB0EFC8001D0496 /* AppDelegate.m */,
 				DEC8939C1DB0EFC8001D0496 /* ViewController.h */,
@@ -216,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC8939E1DB0EFC8001D0496 /* ViewController.m in Sources */,
+				DEC4D6F81DB91CD30087DFC6 /* CountryPickerViewController.m in Sources */,
 				DEC8939B1DB0EFC8001D0496 /* AppDelegate.m in Sources */,
 				DEC893981DB0EFC8001D0496 /* main.m in Sources */,
 			);
@@ -404,6 +410,7 @@
 				DEC893B71DB0EFC8001D0496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEC893B81DB0EFC8001D0496 /* Build configuration list for PBXNativeTarget "CeliacPassUITests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +419,7 @@
 				DEC893BA1DB0EFC8001D0496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
