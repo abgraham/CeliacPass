@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSDictionary *codeToTranslation;
 @property (weak, nonatomic) IBOutlet UITextField *writeInCountry;
 @property (weak, nonatomic) IBOutlet UITextView *cardText;
+@property (strong, nonatomic) NSString *country;
 
 
 
@@ -27,11 +28,6 @@
     [self setUpData];
     self.cardText.editable = NO;
     [self.cardText setScrollEnabled:NO];
-
-    UITapGestureRecognizer *singleFingerTap =
-    [[UITapGestureRecognizer alloc] initWithTarget:self
-                                            action:@selector(handleSingleTap:)];
-    [self.view addGestureRecognizer:singleFingerTap];
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     [self.locationManager requestWhenInUseAuthorization];
@@ -47,10 +43,6 @@
     NSLog(@"didFailWithError: %@", error);
 }
 
-- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
-    NSLog(@"handleSingleTap");
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -64,10 +56,8 @@
         NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
         if (error == nil && [placemarks count] > 0) {
             CLPlacemark *placemark = [placemarks lastObject];
-            NSString *address = [NSString stringWithFormat:@"%@", placemark.country];
-            NSLog(@"COUNTRY: %@", address);
-            //NSLog(@"TRANSLATION: %@", [self translation:address]);
-            self.cardText.text = [self translation:address];
+            self.country = [NSString stringWithFormat:@"%@", placemark.country];
+            self.cardText.text = [self translation:self.country];
         } else {
             NSLog(@"%@", error.debugDescription);
         }
