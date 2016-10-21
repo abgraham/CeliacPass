@@ -91,7 +91,7 @@
                     <navigationItem key="navigationItem" id="Pws-ci-9w4">
                         <barButtonItem key="rightBarButtonItem" title="see full country list" id="T5y-4f-Q4T">
                             <connections>
-                                <segue destination="9ue-AL-xsS" kind="push" id="749-HZ-YAP"/>
+                                <action selector="tappedNavButton:" destination="BYZ-38-t0r" id="LQ1-aG-ZON"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,7 +107,7 @@
         <!--Country Picker View Controller-->
         <scene sceneID="jfY-Gv-CrH">
             <objects>
-                <viewController id="9ue-AL-xsS" customClass="CountryPickerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="countryPickerViewController" id="9ue-AL-xsS" customClass="CountryPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Qu-f4-u7v"/>
                         <viewControllerLayoutGuide type="bottom" id="G1c-mL-Jn1"/>

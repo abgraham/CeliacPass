@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+- (IBAction)tappedNavButton:(id)sender;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSDictionary *countryToCode;
 @property (strong, nonatomic) NSDictionary *codeToTranslation;
@@ -95,4 +96,8 @@ NSString *country;
 }
 
 
+- (IBAction)tappedNavButton:(id)sender {
+    CountryPickerViewController *countryVC = [self.storyboard instantiateViewControllerWithIdentifier:@"countryPickerViewController"];
+    [self.navigationController pushViewController:countryVC animated:YES];
+}
 @end
