@@ -1,4 +1,4 @@
-f = open('Countries.txt')
+f = open('countries.txt')
 countriesList = []
 for line in f: 
     countriesList.append(line.strip())
