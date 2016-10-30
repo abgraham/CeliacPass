@@ -16,6 +16,7 @@
 		DEC893A61DB0EFC8001D0496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC893A41DB0EFC8001D0496 /* LaunchScreen.storyboard */; };
 		DEC893B11DB0EFC8001D0496 /* CeliacPassUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC893B01DB0EFC8001D0496 /* CeliacPassUITests.m */; };
 		DEC893BC1DB0F2B6001D0496 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC893BB1DB0F2B6001D0496 /* CoreLocation.framework */; };
+		DEF99F081DC65B1300D436A8 /* CeliacPassAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF99F071DC65B1300D436A8 /* CeliacPassAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		DEC893B01DB0EFC8001D0496 /* CeliacPassUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CeliacPassUITests.m; sourceTree = "<group>"; };
 		DEC893B21DB0EFC8001D0496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC893BB1DB0F2B6001D0496 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DEF99F061DC65B1300D436A8 /* CeliacPassAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeliacPassAPI.h; sourceTree = "<group>"; };
+		DEF99F071DC65B1300D436A8 /* CeliacPassAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeliacPassAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				DEC8939A1DB0EFC8001D0496 /* AppDelegate.m */,
 				DEC8939C1DB0EFC8001D0496 /* ViewController.h */,
 				DEC8939D1DB0EFC8001D0496 /* ViewController.m */,
+				DEF99F061DC65B1300D436A8 /* CeliacPassAPI.h */,
+				DEF99F071DC65B1300D436A8 /* CeliacPassAPI.m */,
 				DEC8939F1DB0EFC8001D0496 /* Main.storyboard */,
 				DEC893A21DB0EFC8001D0496 /* Assets.xcassets */,
 				DEC893A41DB0EFC8001D0496 /* LaunchScreen.storyboard */,
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC8939E1DB0EFC8001D0496 /* ViewController.m in Sources */,
+				DEF99F081DC65B1300D436A8 /* CeliacPassAPI.m in Sources */,
 				DEC4D6F81DB91CD30087DFC6 /* CountryPickerViewController.m in Sources */,
 				DEC8939B1DB0EFC8001D0496 /* AppDelegate.m in Sources */,
 				DEC893981DB0EFC8001D0496 /* main.m in Sources */,

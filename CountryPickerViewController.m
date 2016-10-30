@@ -79,7 +79,6 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    NSLog(@"Selected country: %@", [countries objectAtIndex:indexPath.row]);
     country = [countries objectAtIndex:indexPath.row];
     [self updateCurrentCountry];
 }
